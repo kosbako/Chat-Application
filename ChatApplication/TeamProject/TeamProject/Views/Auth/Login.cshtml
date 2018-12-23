@@ -1,0 +1,67 @@
+﻿@model TeamProject.Models.LoginVM
+
+@{
+    Layout = "/Views/Shared/_LoginNavbar.cshtml";
+    ViewBag.title = "Login";
+}
+
+
+<body>
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100 p-t-50 p-b-90">
+                <form method="POST" action="@Url.Action("Login","Auth")" class="login100-form validate-form flex-sb flex-w">
+                    <span class="login100-form-title p-b-51">
+                        Login
+                    </span>
+                    @if (ViewBag.Error == "fail")
+                    {
+                        @Html.ValidationMessageFor(u => u.Username, "Wrong username or password", new { @class = "text-danger" })
+                    }
+                    @if (ViewBag.Error == "Removed")
+                    {
+                        @Html.ValidationMessageFor(u => u.Username, "Your account has been removed", new { @class = "text-danger" })
+                    }
+
+
+                    <div class="wrap-input100 validate-input m-b-16" data-validate="Username is required">
+
+                        @Html.TextBoxFor(model => model.Username, new { @class = "input100", @placeholder = "Username" })
+                        <span class="focus-input100"></span>
+                    </div>
+
+
+                    <div class="wrap-input100 validate-input m-b-16" data-validate="Password is required">
+                        <input class="input100" type="password" name="password" placeholder="Password">
+                        <span class="focus-input100"></span>
+                    </div>
+
+
+                    <div class="flex-sb-m w-full p-t-3 p-b-24">
+                        <div class="contact100-form-checkbox">
+                            <input class="input-checkbox100" id="ckb1" type="checkbox" name="rememberme" value="true">
+                            <label class="label-checkbox100" for="ckb1">
+                                Remember me
+                            </label>
+                        </div>
+
+                        <div>
+                            <a href="@Url.Action("Register","Auth")" class="txt1">
+                                Sign up
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="container-login100-form-btn m-t-17">
+                        <button class="login100-form-btn">
+                            Login
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+   
+</body>

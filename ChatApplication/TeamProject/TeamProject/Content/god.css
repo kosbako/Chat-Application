@@ -1,0 +1,99 @@
+﻿
+
+header h1{
+    margin-left:50%;
+}
+
+#selectUser{
+    margin-top:60px;
+    width:500px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#selectReceiver {
+    margin-top: 40px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#displayMessages {
+    background: linear-gradient(to right, #283048, #859398);
+    border: 1px solid #4c4c4c;
+    width: 700px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: scroll;
+    box-shadow: 0 5px 10px #4c4c4c;
+}
+.sentMessage {
+    text-align: start;
+    padding: 4px 25px;
+    
+    width: 400px;
+    float: right;
+    margin-bottom: 10px;
+    display: block;
+    color: azure;
+    margin-top: 10px;
+    border-radius:50px;
+}
+    .sentMessage span {
+        margin-right: 10px;
+        /*background-color: aqua;*/
+        padding-left: 8px;
+        padding-right: 5px;
+    }
+.receivedMessage span {
+    margin-right: 10px;
+    /*background-color: azure;*/
+    padding-left: 8px;
+    padding-right: 5px;
+   
+}
+.hidden{
+    display:none;
+}
+.receivedMessage {
+    background-color: #ebebeb;
+    width: 400px;
+    padding: 4px 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: block;
+    clear: right;
+    border-radius: 50px;
+    
+}
+.sentMessage {
+    background-color: #05728f;
+}
+
+.outerDiv{
+    width:700px;
+    display:block;
+    height: 32px;
+}
+.dateR {
+    color: #4c4c4c;
+    font-size: 10px;
+    padding-left: 15px;
+}
+
+.dateS {
+    padding-left: 15px;
+    clear: right;
+    font-size: 10px;
+}
+
+#inputGroupSelect01 {
+    background-color: #05728f;
+    color:azure;
+}
+
+#inputGroupSelect02 {
+    background-color: #ebebeb;
+    
+}

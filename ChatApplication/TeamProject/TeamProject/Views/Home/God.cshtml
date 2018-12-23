@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = "/Views/Shared/_LoginNavbar.cshtml";
+    ViewBag.title = "God";
+}
+
+<head>
+    <link rel="stylesheet" href="~/Content/god.css">
+</head>
+<body>
+    <header>
+        <h1 hidden>god</h1>
+    </header>
+    <div id="selectUser">
+        <div class="input-group mb-3">
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Choose user</option>
+
+            </select>
+        </div>
+    </div>
+
+    <div id="selectReceiver" class="hidden">
+        <div class="input-group mb-3">
+            <select class="custom-select" id="inputGroupSelect02">
+                <option selected>Choose conversation</option>
+
+            </select>
+        </div>
+    </div>
+
+    <div id="displayMessages" class="hidden">
+
+    </div>
+
+
+    <script src="~/Scripts/js/god.js"></script>
+</body>
+

@@ -1,0 +1,39 @@
+header{
+    text-align: center;
+}
+header h3 {
+    display:inline;
+}
+
+.container {
+    width: 800px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tableCol:nth-child(5):hover {
+    background-color: cadetblue;
+    cursor: pointer;
+}
+
+.tableCol:nth-child(6):hover {
+    background-color: crimson;
+    cursor: pointer;
+    color: blanchedalmond;
+}
+
+thead tr{
+    color: burlywood;
+}
+
+thead tr th:nth-child(5) {
+    color:cadetblue;
+}
+    thead tr th:nth-child(6) {
+        color: crimson;
+    }
+
+table{
+    opacity:0.9;
+}

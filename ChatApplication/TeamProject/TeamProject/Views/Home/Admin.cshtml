@@ -1,0 +1,35 @@
+﻿
+@{
+    Layout = "/Views/Shared/_LoginNavbar.cshtml";
+    ViewBag.title = "Admin Panel";
+}
+
+<head>
+    <link href="~/Content/admin.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h3 hidden>@User.Identity.Name</h3>
+        <h3 hidden>- Admin Panel</h3>
+    </header>
+    <div class="container">
+        <table class="table table-striped table-dark">
+            <thead>
+                <tr class="">
+                    <th scope="col">#</th>
+                    <th scope="col">Username</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Change role</th>
+                    <th scope="col">Delete User</th>
+                </tr>
+            </thead>
+
+            <tbody></tbody>
+
+
+        </table>
+    </div>
+    <script src="~/Scripts/js/admin.js"></script>
+</body>
+

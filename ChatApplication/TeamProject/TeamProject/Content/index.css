@@ -1,0 +1,366 @@
+
+.bodyBlack {
+    background-color: rgba(0,0,0,0.7);
+    z-index: 2;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+img {
+    max-width: 100%;
+}
+
+#popup {
+    width: 500px;
+    height: 500px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    box-shadow: 5px 10px 8px #888888;
+    z-index: 10;
+    display: none;
+    overflow-y: scroll;
+}
+
+    #popup p {
+        padding: 10px 10px;
+        font-size: 16px;
+        cursor: pointer;
+        border-bottom: 1px solid #4c4c4c;
+        margin-bottom: 0;
+        clear: right;
+    }
+
+    #popup h5 {
+        float: left;
+        margin-left: 200px;
+        margin-top: 10px;
+        color: darkcyan;
+        font-weight: bold;
+    }
+
+    #popup p:hover {
+        background-color: black;
+        color: azure;
+    }
+
+    #popup button {
+        float: right;
+        background-color: #ffaaaa;
+        border: 1px solid rgba(117, 115, 125, 0.8);
+        cursor: pointer;
+        margin-bottom: 15px;
+    }
+
+        #popup button:hover {
+            background-color: #801515;
+            color: azure;
+        }
+
+.inbox_people {
+    background: linear-gradient(to right, rgba(95, 44, 130, 0.9), rgba(73, 160, 157, 0.9)) repeat scroll 0 0;
+    float: left;
+    overflow: hidden;
+    width: 40%;
+    border-right: 1px solid #c4c4c4;
+}
+
+.inbox_msg {
+    border: 1px solid #c4c4c4;
+    box-shadow: 0 3px 5px #c4c4c4;
+    clear: both;
+    overflow: hidden;
+}
+
+.recent_heading {
+    float: left;
+    width: 40%;
+}
+
+.search_bar {
+    display: inline-block;
+    text-align: right;
+    width: 60%;
+}
+
+.heading_search {
+    padding: 10px 29px 10px 20px;
+    overflow: hidden;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.recent_heading h4 {
+    color: azure;
+    font-size: 21px;
+    margin: auto;
+}
+
+.search_bar input {
+    border: 1px solid #cdcdcd;
+    border-width: 0 0 1px 0;
+    width: 80%;
+    padding: 2px 0 4px 6px;
+    background: none;
+}
+
+.search_bar .input-group-addon button {
+    background: rgba(0,0,0,0) none repeat scroll 0 0;
+    border: medium none;
+    padding: 0;
+    color: #707070;
+    font-size: 18px;
+}
+
+.srch_bar .input-group-addon {
+    margin: 0 0 0 -27px;
+}
+
+.chat_ib h5 {
+    font-size: 15px;
+    color: azure;
+    margin: 0 0 8px 0;
+    cursor: pointer;
+}
+
+    .chat_ib h5 span {
+        font-size: 13px;
+        float: right;
+    }
+
+.chat_ib p {
+    font-size: 14px;
+    color: #989898;
+    margin: auto
+}
+
+.chat_img {
+    float: left;
+    width: 11%;
+}
+
+.chat_ib {
+    float: left;
+    padding: 0 0 0 15px;
+    width: 88%;
+}
+
+.chat_people {
+    overflow: hidden;
+    clear: both;
+}
+
+.chat_list {
+    border-bottom: 1px solid #c4c4c4;
+    margin: 0;
+    padding: 18px 16px 10px;
+}
+
+.inbox_chat {
+    height: 536px;
+    overflow-y: scroll;
+}
+
+.active_chat {
+    text-decoration: underline;
+    font-style: oblique;
+    color: #68C441 !important;
+}
+
+.incoming_msg_img {
+    display: inline-block;
+    width: 6%;
+}
+
+.received_message {
+    display: inline-block;
+    padding: 0 0 0 10px;
+    vertical-align: top;
+    width: 92%;
+}
+
+.received_withd_message p {
+    background: #ebebeb none repeat scroll 0 0;
+    border-radius: 50px;
+    color: #646464;
+    font-size: 16px;
+    margin: 0;
+    padding: 7px 25px;
+    width: 100%;
+    background-color: lavender;
+    color: purple;
+    font-weight: 500;
+}
+
+.time_date {
+    color: azure;
+    display: block;
+    font-size: 12px;
+    margin: 8px 0 0;
+}
+
+#addUserButton {
+    padding: 0;
+    border: 1px solid #C62428;
+    background: none;
+    background-color: #C62428;
+    border-radius: 100px;
+    color: azure;
+    width: 33px;
+    height: 33px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+    #addUserButton:hover {
+        background-color: #E24B4F;
+        color: white;
+        border: 1px solid #E24B4F;
+        transform: scale(1.2);
+    }
+
+.received_withd_message {
+    width: 57%;
+}
+
+.messages {
+    float: left;
+    padding: 30px 15px 0 25px;
+    width: 60%;
+    background: linear-gradient(to right, #283048, #859398);
+}
+
+    .messages .message_history {
+        height: 516px;
+        overflow-y: auto;
+    }
+
+.sent_message p {
+    border-radius: 50px;
+    background: #05728f none repeat scroll 0 0;
+    font-size: 16px;
+    margin: 0;
+    color: #fff;
+    padding: 7px 25px;
+    width: 100%;
+    color: lavender;
+    background-color: #41837E;
+}
+
+.outgoing_message {
+    overflow: hidden;
+    margin: 26px 0 26px;
+}
+
+.sent_message {
+    float: right;
+    width: 60%;
+}
+
+.input_message_write input {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: medium none;
+    color: azure;
+    font-size: 15px;
+    min-height: 48px;
+    width: 100%;
+}
+
+.type_message {
+    border-top: 1px solid #c4c4c4;
+    position: relative;
+}
+
+.message_send_btn {
+    background: #05728f none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    height: 33px;
+    position: absolute;
+    right: 0;
+    top: 11px;
+    width: 33px;
+}
+
+.messaging {
+    padding: 0 0 50px 0;
+}
+
+#logoutButton {
+    padding: 0;
+    border: 1px solid #447884;
+    background: none;
+    background-color: #447884;
+    border-radius: 100px;
+    color: white;
+    width: 100px;
+    cursor: pointer;
+    float: right;
+    margin-bottom: 2px;
+}
+
+    #logoutButton:hover {
+        background-color: #0F434F;
+        border: 1px solid #0F434F;
+    }
+
+#adminButton {
+    padding: 0;
+    border: 1px solid #D48A6A;
+    background: none;
+    background-color: #D48A6A;
+    border-radius: 100px;
+    color: white;
+    width: 100px;
+    cursor: pointer;
+    float: right;
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+
+    #adminButton:hover {
+        background-color: #803515;
+        border: 1px solid #803515;
+    }
+
+#iconDownload {
+    width: 10px;
+    height: 10px;
+}
+
+#downloadButton {
+    background-color: #38278A;
+    border: 1px solid #38278A;
+    height: 33px;
+    width: 33px;
+    border-radius: 100px;
+    text-align: center;
+    padding: 0;
+    margin-right: 10px;
+    margin-bottom: 4px;
+    transition: all 0.2s;
+}
+
+    #downloadButton:hover {
+        background-color: #51419E;
+        border: 1px solid #51419E;
+        color: white;
+        transform: scale(1.2);
+    }
+
+
+
+Collapse 
+
+Message Input
+
+Message Kostas

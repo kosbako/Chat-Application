@@ -1,0 +1,66 @@
+﻿@model TeamProject.Models.RegisterVM
+
+@{
+    Layout = "/Views/Shared/_LoginNavbar.cshtml";
+    ViewBag.title = "Register";
+}
+
+
+<body>
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100 p-t-50 p-b-90">
+                <form method="POST" action="@Url.Action("Register","Auth")" class="login100-form validate-form flex-sb flex-w">
+                    <span class="login100-form-title p-b-51">
+                        Register
+                    </span>
+                    <div class="wrap-input100 validate-input m-b-16" data-validate="First Name is required">
+                        @Html.TextBoxFor(model => model.FirstName, new { @class = "input100", @placeholder = "First Name" })
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input m-b-16" data-validate="Last Name is required">
+                        @Html.TextBoxFor(model => model.LastName, new { @class = "input100", @placeholder = "Last Name" })
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    @Html.ValidationMessageFor(u => u.Username, "", new { @class = "text-danger" })
+                    @if (ViewData["Message"] != null)
+                    {
+                        @Html.ValidationMessageFor(u => u.Username, "Username exists", new { @class = "text-danger" })
+                    }
+                    <div class="wrap-input100 validate-input m-b-16" data-validate="Username is required">
+                        @Html.TextBoxFor(model => model.Username, new { @class = "input100", @placeholder = "Username" })
+                        <span class="focus-input100"></span>
+                    </div>
+
+
+                    @Html.ValidationMessageFor(u => u.Password, "", new { @class = "text-danger" })
+                    <div class="wrap-input100 validate-input m-b-16" data-validate="Password is required">
+                        <input class="input100" type="password" name="password" placeholder="Password">                       
+                        <span class="focus-input100"></span>
+                    </div>
+
+                    @Html.ValidationMessageFor(u => u.ConfirmPassword, "", new { @class = "text-danger" })
+                    <div class="wrap-input100 validate-input m-b-16" data-validate="Password is required">
+                        <input class="input100" type="password" name="confirmpassword" placeholder="Confirm Password">
+                        <span class="focus-input100"></span>
+                    </div>
+
+
+
+                    <div class="container-login100-form-btn m-t-17">
+                        <button class="login100-form-btn">
+                            Register
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    
+</body>
+

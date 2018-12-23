@@ -1,0 +1,62 @@
+﻿
+@{
+    Layout = "/Views/Shared/_LoginNavbar.cshtml";
+    ViewBag.title = "Home";
+}
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/Content/index.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="popup">
+
+    </div>
+
+    <div class="container">
+        <h3 hidden class=" text-center">@User.Identity.Name</h3>
+        <div class="messaging">
+            <div class="inbox_msg">
+                <div class="inbox_people">
+                    <div class="heading_search">
+                        <div class="recent_heading">
+                            <h4>Recent</h4>
+                        </div>
+
+                        <div class="search_bar">
+                            <div class="stylish-input-group">
+                                <button class="btn btn-primary" id="downloadButton"><i class="fas fa-download"></i></button>
+                                <button id="addUserButton"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inbox_chat">
+
+                    </div>
+                </div>
+                <div class="messages">
+                    <div class="message_history">
+
+                    </div>
+                    <form method="post" action="@Url.Action("SendMessage","Home")">
+                        <div class="type_message">
+                            <div class="input_message_write">
+                                <input type="text" class="write_message" name="data" placeholder="Type a message">
+                                <button class="message_send_btn" type="submit"><i class="fab fa-telegram-plane"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   
+    <script src="~/Scripts/js/index.js"></script>
+
+
+</body>
